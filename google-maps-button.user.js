@@ -45,18 +45,31 @@
             btn.className = 'gmaps-custom-tab';
             btn.innerHTML = 'Maps';
             btn.style.cssText = `
-                margin-left: 8px;
-                padding: 8px 16px;
-                border: 1px solid #dadce0;
-                border-radius: 100px;
+                margin-left: 12px;
+                padding-left: 20px;
                 text-decoration: none;
                 color: #3c4043;
                 font-size: 14px;
-                background: #ffffff;
                 display: inline-flex;
                 align-items: center;
+                position: relative;
+                cursor: pointer;
             `;
-            navBar.prepend(btn);
+
+            // Create the vertical line separator using a separate div or pseudo-element logic
+            const separator = document.createElement('div');
+            separator.style.cssText = `
+                position: absolute;
+                left: 0;
+                top: 20%;
+                height: 60%;
+                width: 1px;
+                background-color: #dadce0;
+            `;
+            
+            // Using appendChild ensures it goes to the end (right side)
+            btn.prepend(separator);
+            navBar.appendChild(btn);
         }
     }
 
