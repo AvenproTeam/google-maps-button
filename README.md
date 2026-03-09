@@ -13,7 +13,7 @@ To use this script, you must first install the **Tampermonkey** browser extensio
 
 ---
 
-## Required Configuration (CHROME)
+## Required Configuration (CHROME/EDGE)
 
 For the script to install and function correctly, you **must** enable the following settings in your browser and extension:
 
@@ -23,12 +23,11 @@ For the script to install and function correctly, you **must** enable the follow
     * **Edge:** `edge://extensions/`
 2.  In the top-right corner, toggle the **"Developer mode"** switch to **ON**.
 
-### 2. Tampermonkey Settings
-1.  Click the Tampermonkey icon in your browser and select **Dashboard**.
-2.  Go to the **Settings** tab.
-3.  Ensure the following options are enabled:
-    * **"Allow user scripts"**
-    * **"Allow access to file URLs"** (Required for scripts hosted on GitHub or local files).
+### 2. Allow User Scripts
+1.  On the same page (`chrome://extensions/`), find the **Tampermonkey** card and click on **"Details"** (or "Manage extension").
+2.  Scroll down and find the option **"Allow user scripts"**.
+3.  Toggle the switch to **ON**.
+    > *Note: This allows the extension to execute the script code. Only enable this if you trust the source.*
 
 ---
 
