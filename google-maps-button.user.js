@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Google Maps Button
 // @namespace    http://tampermonkey.net/
-// @version      2026.03.08.1
+// @version      2026.3.1
 // @description  Restores the Maps button and makes map thumbnails clickable on Google Search.
 // @author       Avenpro Team
 // @match        https://www.google.com/search*
